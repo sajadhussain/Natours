@@ -12,17 +12,21 @@ Dark green: #28b485
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing: inherit;
+    
+}
+html{
+    font-size: 10px;
 }
 
 body{
     font-family: 'Lato', sans-serif;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 1.6rem;
     line-height: 1.7;
     color:#333;
-    padding:20px;
-
+    padding:2rem;
+    box-sizing: border-box;
 
 }
 .header{
@@ -37,11 +41,11 @@ body{
 
 .header__logo-box{
     position: absolute;
-    top:45px;
-    left:45px;
+    top:4.5rem;
+    left:4.5rem;
 }
 .header__logo{
-    height: 85px;
+    height: 8.5rem;
 }
 .header__text--box{
     position: absolute;
@@ -55,15 +59,15 @@ body{
 }
 .heading-primary{
     text-transform: uppercase;
-    margin-bottom:20px;
+    margin-bottom:2rem;
     color:#fff;
 }
 .heading-primary--main{
     display: block;
-    font-size: 60px;
+    font-size: 6rem;
    
     
-    letter-spacing: 27px;
+    letter-spacing:2.7rem;
     font-weight: 400;
     animation-name: moveInLeft;
     animation-duration: 1s;
@@ -72,8 +76,8 @@ body{
 }
 .heading-primary--sub{
     display: block;
-    font-size: 30px;
-    letter-spacing: 17.5px;
+    font-size: 3rem;
+    letter-spacing: 1.8rem;
     font-weight: 300;
     animation: moveInRight 1s ease-in-out;
     
@@ -107,11 +111,11 @@ body{
     0% {
 
         opacity: 0;
-        transform: translateX(100px);
+        transform: translateX(10rem);
     }
 
     80%{
-        transform: translateX(-10px);
+        transform: translateX(-1rem);
     }
 
     100%{
@@ -126,7 +130,7 @@ body{
     0% {
 
         opacity: 0;
-        transform: translateY(30px);
+        transform: translateY(3rem);
     }
 
  
@@ -143,21 +147,21 @@ body{
 .btn:visited{
     text-transform: uppercase;
     text-decoration: none;
-    padding:15px 40px;
+    padding:1.5rem 4rem;
     display: inline-block;
-    border-radius: 100px;
+    border-radius: 10rem;
     transition: all .2s; 
     position: relative;   
    transition: all 0.3s;
 
 }
 .btn:hover{
-    transform: translateY(-3px);
-    box-shadow: 0 10px 20px rgb(0,0,0,0.2);
+    transform: translateY(-.3rem);
+    box-shadow: 0 1rem 2rem rgb(0,0,0,0.2);
 }
 .btn:active{
-    transform: translateY(-1px);
-    box-shadow: 0 5px 10px rgb(0,0,0,0.2);
+    transform: translateY(-.1rem);
+    box-shadow: 0 .5rem 1rem rgb(0,0,0,0.2);
 }
 .btn--white{
     color:#333;
@@ -169,7 +173,7 @@ body{
     content: "";
     position: absolute;
     display: inline-block;
-    border-radius: 100px;
+    border-radius: 10rem;
     top:0;
     left: 0;
     height: 100%;
