@@ -29,25 +29,3 @@
 
 
 
-.heading-primary{
-    text-transform: uppercase;
-    margin-bottom:2rem;
-    color:$color-white;
-    &--main{
-        display: block;
-        font-size: 6rem;
-        letter-spacing:2.7rem;
-        font-weight: 400;
-        animation-name: moveInLeft;
-        animation-duration: 1s;
-        
-        
-    }
-    &--sub{
-        display: block;
-        font-size: 3rem;
-        letter-spacing: 1.8rem;
-        font-weight: 300;
-        animation: moveInRight 1s ease-in-out;
-    }
-}
