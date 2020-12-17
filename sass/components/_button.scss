@@ -47,11 +47,19 @@
         background: $color-white;
     }
 }
+&--green{
+    background-color: $primary-color;
+    color:$color-white;
+    &:after{
+        background:$primary-color;
+    }
+}
 &--animated{  
     animation: moveInBottom .5s ease-out 0.75s;
     animation-fill-mode: backwards;
 }
 }
+
 
 .btn-text{
     &:link,
