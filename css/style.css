@@ -313,6 +313,7 @@ body {
     font-weight: 100; }
 
 .story {
+  position: relative;
   width: 75%;
   margin: 0 auto;
   box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
@@ -337,6 +338,14 @@ body {
     height: 100%; }
   .story__text {
     transform: skewX(12deg); }
+  .story__caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.4rem;
+    color: #fff;
+    text-transform: uppercase; }
 
 .row {
   max-width: 114rem;

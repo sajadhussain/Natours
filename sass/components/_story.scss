@@ -1,4 +1,5 @@
 .story{
+    position: relative;
     width: 75%;
     margin: 0 auto;
     box-shadow: 0 3rem 6rem rgba($color-black,.1);
@@ -23,13 +24,24 @@
         clip-path: circle(50% at 50% 50%);
         -webkit-clip-path: circle(50% at 50% 50%);
         transform: translateX(-3rem) scaleX(12deg);
+        
     }
-
     &__img{
         height: 100%;
 
     }
+
+   
     &__text{
         transform: skewX(12deg);
+    }
+    &__caption{
+        position:absolute;
+        top:50%;
+        left:50%;
+        transform: translate(-50%,-50%);
+        font-size: 1.4rem;
+        color:$color-white;
+        text-transform: uppercase;
     }
 }
