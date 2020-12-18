@@ -335,17 +335,30 @@ body {
     -webkit-clip-path: circle(50% at 50% 50%);
     transform: translateX(-3rem) scaleX(12deg); }
   .story__img {
-    height: 100%; }
+    height: 100%;
+    transform: translateX(2rem) scale(1.5);
+    backface-visibility: hidden; }
   .story__text {
     transform: skewX(12deg); }
   .story__caption {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, 50%);
     font-size: 1.4rem;
     color: #fff;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    text-align: center;
+    opacity: 0;
+    transition: all 1s;
+    backface-visibility: hidden; }
+  .story:hover .story__caption {
+    opacity: 1;
+    transform: translate(-50%, -50%); }
+  .story:hover .story__img {
+    transform: translateX(2rem) scale(1);
+    backface-visibility: hidden;
+    filter: blur(2px) brightness(50%); }
 
 .row {
   max-width: 114rem;

@@ -28,6 +28,8 @@
     }
     &__img{
         height: 100%;
+        transform: translateX(2rem) scale(1.5);
+        backface-visibility: hidden;
 
     }
 
@@ -39,9 +41,23 @@
         position:absolute;
         top:50%;
         left:50%;
-        transform: translate(-50%,-50%);
+        transform: translate(-50%,50%);
         font-size: 1.4rem;
         color:$color-white;
         text-transform: uppercase;
+        text-align: center;
+        opacity: 0;
+        transition: all 1s;
+        backface-visibility: hidden;
+    }
+    &:hover &__caption{
+        opacity: 1;
+        transform: translate(-50%,-50%);
+
+    }
+    &:hover &__img{
+        transform: translateX(2rem) scale(1);
+        backface-visibility: hidden;
+        filter: blur(2px) brightness(50%);
     }
 }
