@@ -58,6 +58,7 @@
 &--green{
     background-color: $primary-color;
     color:$color-white;
+    position: absolute;
     &:after{
         background:$primary-color;
     }
